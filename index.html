@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calci||darkxx</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+
+<body>
+    <h1>Calculator </h1>
+    <div class="container">
+        <p>Number of operations performed :: <span id="operation-numbers"></span></p>
+
+        <div id="inputdiv">
+            <input id="input1" type="number" placeholder="Enter first number">
+            <div id="operator" value="+">
+                +
+
+            </div>
+            <input id="input2" type="number" placeholder="Enter second number">
+
+        </div>
+
+        <div id="buttondiv">
+            <button id="btn-1" onclick="changeToMinus()">-</button>
+            <button id="btn-2" onclick="changeToPro()">x</button>
+            <button id="btn-3" onclick="changeToDivide()">/</button>
+        </div>
+
+        <div id="resdiv">
+            <button id="reset" onclick="resetToDefalut()">Reset</button>
+
+            <div id="result">
+                <p>result : <span id="result_"></span></p>
+            </div>
+        </div>
+
+        <div id="resultdiv">
+            <button class="calculate" onclick="doCalculations()">
+                Calculate
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

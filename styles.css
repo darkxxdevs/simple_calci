@@ -1,0 +1,160 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-image: linear-gradient(to right top, #d16b7d, #da6d8d, #e2709e, #e775b1, #e97bc6, #d08fe3, #b2a2f6, #92b2ff, #47caff, #00dfff, #00efec, #5ffbc4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body h1 {
+    position: absolute;
+    top: 10%;
+    text-transform: uppercase;
+}
+
+.container {
+    height: 50%;
+    width: 50%;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    padding: 1%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+}
+
+.container>p {
+    color: #fff;
+    font-size: 1vw;
+
+}
+
+#operator {
+    color: white;
+    font-weight: 600;
+    font-size: 1vw;
+}
+
+.container h1 {
+    border-bottom: 2px solid grey;
+}
+
+#inputdiv {
+    display: flex;
+    height: 10%;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+#inputdiv input {
+    padding: 2% 4%;
+    border-radius: 50px;
+    text-align: center;
+    border: none;
+}
+
+#inputdiv input ::placeholder {
+    color: #ccc;
+}
+
+#buttondiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+}
+
+
+#buttondiv button {
+    padding: 2px 20px;
+    border-radius: 20px;
+    border: 2px solid #b2a2f6;
+}
+
+#resdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+
+#resultdiv {
+    margin-top: 5%;
+}
+
+#result>p {
+    color: #fff;
+}
+
+#reset {
+    padding: 1% 3%;
+    border-radius: 50px;
+    border: 2px solid #d08fe3;
+}
+
+.calculate {
+    width: 30%;
+    border-radius: 40px;
+    border: 2px solid #d08fe3;
+    padding: 1% 5%;
+    color: #000;
+}
+
+@media (max-width:600px) {
+    .container {
+        width: 80%;
+        height: 55%;
+    }
+
+    .container>p {
+        font-size: 4vmin;
+        margin: 10%;
+    }
+
+    #inputdiv {
+        flex-direction: column;
+        gap: 40%;
+    }
+
+    #operator {
+        font-size: 4vmin;
+    }
+
+    #resdiv {
+        flex-direction: column-reverse;
+    }
+
+    #resultdiv {
+        margin-top: 10%;
+    }
+
+    .calculate {
+        width: 50%;
+        color: #775a5a;
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+
+    #result>p {
+        color: #fff;
+
+    }
+
+    #result {
+        margin-bottom: 4%;
+    }
+
+}
